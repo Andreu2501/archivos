@@ -1,0 +1,234 @@
+#importar "/codigo/estructura.m"
+#importar "/codigo/olc.m"
+#importar "/mamarre/jajaj.m"
+#definir arreglo{{1,2,3},{4,10,8}}
+#definir hola 25
+
+Rtxt miinput;
+RtxtA miinput2;
+RtxtP miinput3;
+RtxtN miinput4;
+Rbton miboton2;
+
+ent varA=2;
+ent varB=3;
+ent varC= varA+varB;
+
+
+chr a;
+chr b='y';
+a=b;
+a='z';
+persona obj;
+obj.edad=a;
+obj.nombre.edad.sexo[2]=5+9*8/3;
+obj=_reservar(3+8);
+obj=_reservar(_pesode(persona));
+ent cant= _pesode(persona);
+
+zro R:iniciar_ventana(){
+	
+		_Nuevo_GUI(mibuton1);	
+		_Nuevo_GUI(mibuton2);
+		_Nuevo_GUI(mibuton3);
+		_Nuevo_GUI(mibuton4);
+
+		miInput1.settexto("este es un texto inicial");
+		miInput1.gettexto();
+		miInput2.setancho(hola);
+		miInput2.getancho();
+		miInput3.setalto(hola*8);		
+		miInput3.getalto();
+		miInput4.setpos(hola,hola*15);
+		miInput4.getpos();	
+
+}
+zro miboton:al_dar_click()
+{
+	
+	Rmensaje("valor de mi input: %e ", hola);
+}
+
+chr unaFuncion(ent a, chr b, dec c, bul d)
+{
+	dec id[10];
+	ent valores[][][];
+	persona nombre[1];
+	perona nombre[][];
+	persona obj;
+  	obj=_reservar(_pesode(persona));
+	ent b= 123;
+	a=_atxt(b);
+	b=_aent(a);
+	_imp("son iguales", _eqls(a,b));
+	_conc(a,b);
+	ent n=5;
+	dec id[10];
+	ent id[x+27];
+	chr id_3[]={'s','i'};
+	chr id_4[2]={'n','o'};
+	chr cadena[10]="hola mundo";
+
+	ent miarray [2][2];
+	ent valores [2][2][3];
+	ent valores2 [][][]={{{1,2,3},{1,2,3}},{{1,2,3},{1,2,3}}};
+	chr b[2]=a[0];
+	chr z[]="arreglo de arreglos";
+	ent b=z[0];
+	switch(n>2)
+	{
+		case 1:
+		_imp("caso 1");
+		case 3:
+		_imp("son iguales", _eqls(a,b));
+		romper;
+		default:
+		_imp("son iguales", _eqls(a,b));
+		mimetodo();
+		romper;
+
+	}
+	regresar b;
+}
+zro mimetodo()
+{
+	repeat{
+	_imp("hola");
+	digito++;
+	}when(digito<=9);
+
+	ent y;
+	for(ent x=2; x<20; x=x++)
+	{
+		_imp("hola");
+	}
+
+	_write("/midir/hola_mundo.txt");
+	_wf("hola");
+	_wf("con formato %d", 9.780);
+	_close();
+	_apend("/midir/hola_mundo.txt");
+	_wf("hola");
+	_wf("con formato %d", 9.780);
+	_close();
+	Rstring contenedor;
+	_read("/midir/hola_mundo.txt",contenedor);
+	_close();
+	unaFuncion2(1,'e',2.35,true);
+
+}
+bul[] unaFuncion2(ent a, chr b, dec c, bul d[])
+{
+		
+		
+
+
+
+	persona a;
+	a= _reservar(_pesode(persona));
+	a.edad = 15;
+	a.siguiente = _reservar(_pesode(persona));
+	a.siguiente.siguiente = _reservar(_pesode(persona));
+	a.siguiente.siguiente.siguiente = _reservar(_pesode(persona));
+	a.siguiente.edad = 25;
+	a.siguiente.siguiente.edad = 45;
+	a.siguiente.siguiente.siguiente.edad = a.siguiente.siguiente.edad + 15;
+	_imp(a.siguiente.siguiente.siguiente.edad);
+	_imp(a.siguiente.siguiente.edad);
+	_imp(a.siguiente.edad);
+	_imp(a.edad);	
+	obj=_reservar(_pesode(persona));
+	obj.edad=a;
+	chr a;
+	chr b='y';
+	a=b;
+	a='z';
+	ent i=0;
+	while(i<25){
+		_imp("imprimiendo en consola",i);
+		if(i==11)
+		{
+			i=i+12;
+			_imp("entrando al if");
+			siga;
+		}else if(i==2)
+		{
+
+			i=i+3;
+			_imp("entrando al else if");
+		}else
+		{
+
+			i=i+12;
+			_imp("entrando al else");	
+		}
+		i++;
+	}
+	
+	
+	
+	regresar d;
+}
+
+fusion persona{
+	ent edad;
+	chr nombre=10*86+7;
+	persona siguiente;
+};
+
+
+
+
+
+
+ent queOnda()
+{
+	ent a;
+ent b;
+a=2;
+b=3;
+
+ent c[a][b];
+c[a-1][b-2]=a+b;
+c[0][0]=1;
+c[0][1]=1;
+_imp("El valor asignado al arreglo es:");
+_imp(c[c[0][0]][c[0][1]]);
+_imp("El valor asignado al arreglo +5*10/2 es:");
+_imp(c[c[0][0]][c[0][1]]+5*10/2);
+
+chr d[c[c[0][0]][c[0][1]]][c[c[0][0]][c[0][1]]][c[c[0][0]][c[0][1]]];
+d[c[c[0][0]][c[0][1]]-1][c[c[0][0]][c[0][1]]-2][c[c[0][0]][c[0][1]]-3]='H';
+d[c[c[0][0]][c[0][1]]-3][c[c[0][0]][c[0][1]]-2][c[c[0][0]][c[0][1]]-1]='M';
+_imp("Los dos valores contenidos por el arreglo de cadenas concatenados son : "	);
+_imp(d[c[c[0][0]][c[0][1]]-1][c[c[0][0]][c[0][1]]-2][c[c[0][0]][c[0][1]]-3]);
+_imp(d[c[c[0][0]][c[0][1]]-3][c[c[0][0]][c[0][1]]-2][c[c[0][0]][c[0][1]]-1]);
+regresar c;
+
+
+}
+
+zro UnaMAS()
+{
+	fusion persona{
+    ent edad;
+    chr nombre[20];
+    persona siguiente;  
+};
+
+persona a;
+a=_reservar(_pesode(persona));
+a.siguiente=_reservar(_pesode(persona));
+a.siguiente.siguiente=_reservar(_pesode(persona));
+_imp(a.nombre[0]);
+_imp(a.siguiente.nombre[1]);
+_imp(a.siguiente.siguiente.nombre[2]);
+
+a.nombre[0] = 'H';
+_imp(a.nombre[0]);
+a.siguiente.nombre[1] = 'A';
+_imp(a.siguiente.nombre[1]);
+a.siguiente.siguiente.nombre[2] = 'R';
+_imp(a.siguiente.siguiente.nombre[2]);
+	
+}

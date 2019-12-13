@@ -1,0 +1,48 @@
+
+ent y2[2][2][3] = {
+					{
+						{1,2,3},
+						{1,2,3}
+					},
+					{
+						{1,2,3},
+						{1,2108,3}
+					}
+				};
+	_imp("Estoy imprimiendo %e",y2[1][1][1]);	
+y2[0][0][0]= 2501;		
+	_imp("Estoy imprimiendo %e",y2[0][0][0]);	
+dec x;
+_imp("Estoy imprimiendo %d,%d,%d,%c",'a',12,2100,'B');
+_imp("Estoy imprimiendo %d",200);
+_imp("Estoy imprimiendo %d",25.6);
+_imp("Estoy imprimiendo %b",230);
+_imp("Estoy imprimiendo %b",-230);
+_imp("Estoy imprimiendo %b",36.8);
+_imp("Estoy imprimiendo %b",false);
+_imp("Estoy imprimiendo %c",'A');
+_imp("Estoy imprimiendo %c",97);
+_imp("Estoy imprimiendo %c",56.3);
+
+ent a;
+ent b;
+a=2;
+b=3;
+
+ent c[a][b];
+c[a-1][b-2]=a+b;
+c[0][0]=1;
+c[0][1]=1;
+_imp("El valor asignado al arreglo es:");
+_imp(c[c[0][0]][c[0][1]]);
+_imp("El valor asignado al arreglo +5*10/2 es:");
+_imp(c[c[0][0]][c[0][1]]+5*10/2);
+
+chr d[c[c[0][0]][c[0][1]]][c[c[0][0]][c[0][1]]][c[c[0][0]][c[0][1]]];
+d[c[c[0][0]][c[0][1]]-1][c[c[0][0]][c[0][1]]-2][c[c[0][0]][c[0][1]]-3]='H';
+d[c[c[0][0]][c[0][1]]-3][c[c[0][0]][c[0][1]]-2][c[c[0][0]][c[0][1]]-1]='M';
+_imp("Los dos valores contenidos por el arreglo de cadenas concatenados son : "	);
+_imp(d[c[c[0][0]][c[0][1]]-1][c[c[0][0]][c[0][1]]-2][c[c[0][0]][c[0][1]]-3]);
+_imp(d[c[c[0][0]][c[0][1]]-3][c[c[0][0]][c[0][1]]-2][c[c[0][0]][c[0][1]]-1]);
+
+
