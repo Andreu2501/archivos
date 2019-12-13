@@ -1,4 +1,5 @@
-
+ent dia2[]={65,66,67};
+_imp("array de chars %s",dia2);
 chr id5[][]=	{
 					{'h','o'},
 					{'l','a'}
@@ -41,6 +42,7 @@ _imp("%e",id6[0][0][0]);
 
 
 chr dia[]="viernes";
+_imp("array de chars %s",dia);
 _imp("%c",dia[0]);
 _imp("%c",dia[1]);
 _imp("%c",dia[2]);
@@ -48,7 +50,7 @@ _imp("%c",dia[3]);
 _imp("%c",dia[4]);
 _imp("%c",dia[5]);
 _imp("%c",dia[6]);
-_imp("%s",dia);
+
 
 
 bul varK[]={false,true,34};
