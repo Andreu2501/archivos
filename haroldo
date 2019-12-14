@@ -1,0 +1,7 @@
+zro main()
+{
+ent a[2];
+a = {{1, 3, 0}, {-1, 5, 9}};
+ent lista1[] = a[1];
+_imp("%e",lista1[1]);
+}

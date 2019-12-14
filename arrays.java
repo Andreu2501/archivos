@@ -1,3 +1,5 @@
+zro main()
+{
 ent dia2[]={65,66,67};
 _imp("array de chars %s",dia2);
 chr id5[][]=	{
@@ -58,3 +60,23 @@ _imp("%b",varK[2]);
 bul varH[2][2];
 varH[varK[1]][0]=true;
 _imp("%b",varH[varK[1]][0]);
+
+
+ent varAN[2];
+varAN = {{1, 3, 0}, {-1, 5, 9}};
+ent listaA[] = varAN[1];
+_imp("%e",listaA[1]);
+
+dec varAN2[2];
+varAN2 = {{1.0, 3.2, 0.5}, {-1.2, 5.3, 9.8}};
+dec listaB[] = varAN2[1];
+_imp("%d",listaB[1]);
+
+chr varAN3[2];
+varAN3 = {{'A','N','D'}, {'R', 'E', 'A'}};
+_imp("%s",varAN3[0]);
+chr listaC[] = varAN3[1];
+_imp("%c",listaC[0]);
+
+
+}
