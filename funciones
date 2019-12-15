@@ -28,4 +28,47 @@ zro Hanoi(ent discos, chr origen[], chr aux[], chr destino[]){
             regresar ackermann(m - 1, ackermann(m, n - 1));
         }
     }
+    
+ent potencia(ent base, ent exp) {
+    if(exp==0){
+    	  regresar 1;
+    }else{
+    	  regresar base * potencia(base, exp - 1);
+    }
+}
+
+_imp("Potencia 2¬16 de 65536 = %e",potencia(2,16));
+
+
+ent factorial(ent n) {
+	if(n==0){
+    	  regresar 1;
+    }else{
+    	  regresar n * factorial(n- 1);
+    }
+}
+
+_imp("Factorial de 9 362880 = %e",factorial(9));
+
+ent modulo(ent n, ent p) {
+	if(n<p){
+		regresar n;
+	}else{
+		regresar  modulo(n - p, p);
+	}
+}
+_imp("Modulo de 4 y 3 1=%e",modulo(4,7));
+
+ent fibonaci(ent n){
+	if(n==1 || n ==2){
+		regresar 1;
+	}else
+	{
+		regresar fibonaci(n-1) + fibonaci(n-2) ;
+	}
+} 
+_imp("fibonaci de 19 4181= %e",fibonaci(19));
+
+
+
 
