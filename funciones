@@ -99,6 +99,14 @@ for (ent i = 0; i < 20; i=i+1) {
     }
 
 
+ent mcd(ent a, ent b) {
+	if(b==0){
+		regresar a;
+	}else{
+		regresar mcd(b, modulo(a, b));
+	}
+}
 
+_imp(mcd(12,44));
 
 
