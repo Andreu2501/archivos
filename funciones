@@ -69,6 +69,36 @@ ent fibonaci(ent n){
 } 
 _imp("fibonaci de 19 4181= %e",fibonaci(19));
 
+ent hofstaderFemenina(ent n) {
+    if (n < 0) {
+        regresar 0;
+    } else {
+            if(n==0){
+                regresar 1;
+            }else{
+                regresar n-hofstaderFemenina(n - 1);
+            }
+    }
+}
+
+ent hofstaderMasculino(ent n) {
+    if (n < 0) {
+        regresar 0;
+    } else {
+            if(n==0){
+                regresar 0;
+            }else{
+                regresar n - hofstaderMasculino(n - 1);
+            }
+    }
+}
+
+for (ent i = 0; i < 20; i=i+1) {
+        _imp("Hoftater Femenino de %e =  %e ",i,hofstaderFemenina(i));
+        _imp("Hoftater Masculino de %e =  %e ",i,hofstaderMasculino(i));
+    }
+
+
 
 
 
